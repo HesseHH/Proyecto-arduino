@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ProyectArduino</string>
+
+    <string name="login_title">Inicio de Sesión</string>
+    <string name="login_email">Correo Electrónico</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_recovery_pass">Recuperar contraseña</string>
+    <string name="login_btnlogin">Iniciar sesión</string>
+    <string name="login_account">Crear cuenta</string>
+    <string name="string_login_title">Inicio de Sesión</string>
+
+    <string name="signup_title">Creación de cuenta</string>
+    <string name="signup_nombre">Nombre</string>
+    <string name="signup_email">Correo electrónico</string>
+    <string name="signup_pass">Constraseña</string>
+    <string name="signup_confirm_pass">Confirmar constraseña</string>
+    <string name="signup_btncreate_account">Crear cuenta</string>
+    <string name="signup_login">Iniciar Sesión</string>
+
+    <string name="recovery_title">Recuperación de cuenta</string>
+    <string name="recovery_email">Ingrese su correo electrónico</string>
+    <string name="recovery_message">Se enviará un correo electrónico para reestablecer su contraseña</string>
+    <string name="recovery_recovery">Enviar correo</string>
+    <string name="title_activity_search_device">SearchDeviceActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
