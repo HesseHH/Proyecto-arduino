@@ -3,9 +3,11 @@ package com.example.proyectarduino;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -26,6 +28,25 @@ public class DataActivity extends AppCompatActivity {
 
         email = (EditText) findViewById(R.id.txtEmailData);
         name = (EditText) findViewById(R.id.txtNameData);
+    }
+
+    public void onClick(View view) {
+        Intent intent = null;
+
+        switch (view.getId()) {
+
+            case R.id.btn_search_user:
+                searchUser();
+                break;
+
+            case R.id.btn_update_user:
+                updateUser();
+                break;
+
+            case R.id.btn_delete_user:
+                deleteUser();
+                break;
+        }
     }
 
     private void searchUser() {

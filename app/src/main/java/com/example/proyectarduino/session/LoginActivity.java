@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btnLogin:
                 if (verifyAccount()) {
-                    //mandar a pagina principal
+                    // TODO: mandar a pagina principal
                     System.out.println("Credenciales correctas");
                 }else {
                     Toast.makeText(getApplicationContext(), "Email o contraseña incorrectos", Toast.LENGTH_SHORT).show();

@@ -25,7 +25,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/search_user"
+            android:id="@+id/btn_search_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -55,7 +55,7 @@
         android:weightSum="1">
 
         <Button
-            android:id="@+id/update_user"
+            android:id="@+id/btn_update_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -64,7 +64,7 @@
             android:text="Modificar" />
 
         <Button
-            android:id="@+id/delete_user"
+            android:id="@+id/btn_delete_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
