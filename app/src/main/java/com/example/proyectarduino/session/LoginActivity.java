@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.proyectarduino.ConnectionSQLiteHelper;
+import com.example.proyectarduino.DataActivity;
 import com.example.proyectarduino.R;
 import com.example.proyectarduino.helpers.Helper;
 
@@ -37,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (verifyAccount()) {
                     // TODO: mandar a pagina principal
                     System.out.println("Credenciales correctas");
+                    intent = new Intent(LoginActivity.this, DataActivity.class);
                 }else {
                     Toast.makeText(getApplicationContext(), "Email o contraseña incorrectos", Toast.LENGTH_SHORT).show();
                 }

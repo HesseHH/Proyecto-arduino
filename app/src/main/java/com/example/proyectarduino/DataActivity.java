@@ -66,6 +66,7 @@ public class DataActivity extends AppCompatActivity {
 
             cursor.moveToFirst();
             name.setText(cursor.getString(0));
+            System.out.println(name);
             cursor.close();
         } catch (Exception e) {
             Toast.makeText(getApplicationContext(),"El correo electrónico no existe",Toast.LENGTH_LONG).show();
