@@ -129,9 +129,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:background="#00FFFFFF"
-        android:text="@string/signup_login"
-        android:textAllCaps="false"
         android:onClick="onClick"
+        android:text="Buscar Usuario"
+        android:textAllCaps="false"
         android:textColor="@android:color/holo_blue_dark" />
 
 </LinearLayout>

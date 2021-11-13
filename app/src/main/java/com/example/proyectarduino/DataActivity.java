@@ -46,6 +46,14 @@ public class DataActivity extends AppCompatActivity {
             case R.id.btn_delete_user:
                 deleteUser();
                 break;
+
+            case R.id.btnCreateAccountData:
+                intent = new Intent(DataActivity.this, CreateAccountActivity.class);
+                break;
+        }
+
+        if (intent != null) {
+            startActivity(intent);
         }
     }
 
@@ -54,45 +62,51 @@ public class DataActivity extends AppCompatActivity {
         String[] parameters = {email.getText().toString()};
         String[] columns = {Helper.NOMBRE};
 
-        try {
-            Cursor cursor = db.query(
-                    Helper.TABLA_USUARIO,
-                    columns,
-                    Helper.CORREO + "=?",
-                    parameters,
-                    null,
-                    null,
-                    null);
+        if (email.getText().toString() != "") {
+            try {
+                Cursor cursor = db.query(
+                        Helper.TABLA_USUARIO,
+                        columns,
+                        Helper.CORREO + "=?",
+                        parameters,
+                        null,
+                        null,
+                        null);
 
-            cursor.moveToFirst();
-            name.setText(cursor.getString(0));
-            System.out.println(name);
-            cursor.close();
-        } catch (Exception e) {
-            Toast.makeText(getApplicationContext(),"El correo electrónico no existe",Toast.LENGTH_LONG).show();
+                cursor.moveToFirst();
+                name.setText(cursor.getString(0));
+                System.out.println(name);
+                cursor.close();
+            } catch (Exception e) {
+                Toast.makeText(getApplicationContext(),"El correo electrónico no existe",Toast.LENGTH_LONG).show();
+            }
         }
     }
 
     private void updateUser() {
-        SQLiteDatabase db = connection.getWritableDatabase();
-        String[] parameters = {email.getText().toString()};
+        if (email.getText().toString() != "") {
+            SQLiteDatabase db = connection.getWritableDatabase();
+            String[] parameters = {email.getText().toString()};
 
-        ContentValues values = new ContentValues();
-        values.put(Helper.NOMBRE, name.getText().toString());
+            ContentValues values = new ContentValues();
+            values.put(Helper.NOMBRE, name.getText().toString());
 
-        db.update(Helper.TABLA_USUARIO, values, Helper.CORREO + "=?", parameters);
-        Toast.makeText(getApplicationContext(),"Usuario Actualizado",Toast.LENGTH_LONG).show();
-        db.close();
+            db.update(Helper.TABLA_USUARIO, values, Helper.CORREO + "=?", parameters);
+            Toast.makeText(getApplicationContext(),"Usuario Actualizado",Toast.LENGTH_LONG).show();
+            db.close();
+        }
     }
 
     private void deleteUser() {
-        SQLiteDatabase db = connection.getWritableDatabase();
-        String[] parameters = {email.getText().toString()};
+        if (email.getText().toString() != "") {
+            SQLiteDatabase db = connection.getWritableDatabase();
+            String[] parameters = {email.getText().toString()};
 
-        db.delete(Helper.TABLA_USUARIO, Helper.CORREO + "=?", parameters);
-        Toast.makeText(getApplicationContext(),"Usuario Actualizado",Toast.LENGTH_LONG).show();
-        db.close();
-        email.setText("");
-        name.setText("");
+            db.delete(Helper.TABLA_USUARIO, Helper.CORREO + "=?", parameters);
+            Toast.makeText(getApplicationContext(),"Usuario eliminado",Toast.LENGTH_LONG).show();
+            db.close();
+            email.setText("");
+            name.setText("");
+        }
     }
 }

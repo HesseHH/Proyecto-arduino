@@ -23,17 +23,17 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.example.proyectarduino.R.layout.activity_sign_up);
 
-        name = (EditText) findViewById(R.id.txtNombre);
-        email = (EditText) findViewById(R.id.txtEmailSignUp);
-        pass = (EditText) findViewById(R.id.txtPasswordSignUp);
-        confirmPass = (EditText) findViewById(R.id.txtConfirmPasswordSignUp);
+        name = (EditText) findViewById(R.id.txtDataNombre);
+        email = (EditText) findViewById(R.id.txtDataEmailSignUp);
+        pass = (EditText) findViewById(R.id.txtDataPasswordSignUp);
+        confirmPass = (EditText) findViewById(R.id.txtDataConfirmPasswordSignUp);
     }
 
     public void onClick(View view) {
         Intent intent = null;
 
         switch (view.getId()) {
-            case R.id.btnCreateAccount:
+            case R.id.btnDataCreateAccount:
                 if (verifyPasswords()) {
                     registerAccount();
                     intent = new Intent(SignUpActivity.this, LoginActivity.class);
@@ -41,7 +41,7 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.btnGoLogin:
+            case R.id.btnGoSearchData:
                 intent = new Intent(SignUpActivity.this, LoginActivity.class);
                 break;
         }
@@ -60,7 +60,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
-    public void registerAccount() {
+    private void registerAccount() {
 
         ConnectionSQLiteHelper connection = new ConnectionSQLiteHelper(this, "bd_users", null, 1);
         SQLiteDatabase db = connection.getWritableDatabase();
