@@ -1,6 +1,7 @@
 package com.example.proyectarduino;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +12,6 @@ import com.example.proyectarduino.session.SignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
     Intent intent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

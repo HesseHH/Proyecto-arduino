@@ -4,13 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.proyectarduino.helpers.Helper;
+import com.example.proyectarduino.models.Usuario;
+
+import java.util.ArrayList;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
@@ -50,7 +55,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         if (pass.getText().toString() != "" && confirmPass.getText().toString() != "") {
             if (pass.getText().toString().equals(confirmPass.getText().toString())) {
                 return true;
-            }else {
+            } else {
                 Toast.makeText(getApplicationContext(), "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
                 return false;
             }
