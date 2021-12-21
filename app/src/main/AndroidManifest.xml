@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectArduino">
         <activity
+            android:name=".ConnectionBluetooth"
+            android:exported="false" />
+        <activity
             android:name=".MostrarLista"
             android:exported="true" />
         <activity
