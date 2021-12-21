@@ -9,22 +9,8 @@
         <entry key="..\:/Users/erasm/AndroidStudioProjects/ProyectArduino/app/src/main/res/layout/activity_search_device.xml" value="0.25" />
         <entry key="..\:/Users/erasm/AndroidStudioProjects/ProyectArduino/app/src/main/res/layout/activity_search_device2.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/erasm/AndroidStudioProjects/ProyectArduino/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
-        <entry key="..\:/Users/erasm/Desktop/Android/Proyecto-Arduino/app/src/main/res/layout/activity_create_account.xml" value="0.25" />
         <entry key="..\:/Users/erasm/Desktop/Android/Proyecto-Arduino/app/src/main/res/layout/activity_data.xml" value="0.33" />
-        <entry key="..\:/Users/erasm/Desktop/Android/Proyecto-Arduino/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/erasm/Desktop/Android/Proyecto-Arduino/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_consultar_registros.xml" value="0.1" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_create_account.xml" value="0.24456521739130435" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_data.xml" value="0.264" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_login.xml" value="0.24456521739130435" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_login2.xml" value="0.24456521739130435" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_main.xml" value="0.24456521739130435" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_mostrar_lista.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_recovery_account.xml" value="0.24456521739130435" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_search.xml" value="0.24003623188405798" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/activity_sign_up.xml" value="0.24456521739130435" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/item_table_usuario.xml" value="0.24003623188405798" />
-        <entry key="..\:/Users/franc/Desktop/Arduino/Proyecto-arduino/app/src/main/res/layout/lista_item_registros.xml" value="0.23550724637681159" />
+        <entry key="..\:/Users/erasm/Desktop/Android/Proyecto-arduino/app/src/main/res/layout/activity_connection_bluetooth.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
